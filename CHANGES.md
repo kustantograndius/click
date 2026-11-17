@@ -3,6 +3,9 @@
 Unreleased
 
 - Drop support for Python 3.10. {pr}`3920` {pr}`3921`
+- The error hint for an option with `show_envvar` enabled names the
+  environment variable derived from `auto_envvar_prefix`, matching the help
+  page, rather than omitting it. {issue}`3914`
 - A parameter name that is not a valid Python identifier, or that is a Python
   keyword, is deprecated and raises `TypeError` in Click 9.0. {pr}`3866`
 - An {class}`Option` name written as a Python identifier is deprecated when it
